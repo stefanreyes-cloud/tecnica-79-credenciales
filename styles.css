@@ -1,0 +1,199 @@
+
+:root {
+  --institucional: rgb(79, 3, 0);
+  --verde: #16803c;
+  --verde-claro: #dcfce7;
+  --blanco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--institucional);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--blanco);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.credencial {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* HEADER */
+
+.header {
+  margin-bottom: 38px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* PERFIL */
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-contenedor {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  background: #eee;
+  margin-bottom: 22px;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.perfil h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.matricula {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* TARJETA BLANCA */
+
+.informacion {
+  background: var(--blanco);
+  color: #333;
+  border-radius: 18px;
+  padding: 28px 22px;
+  margin-top: 35px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* ESTADO ACTIVO */
+
+.estado {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: var(--verde-claro);
+  color: #166534;
+
+  padding: 9px 22px;
+  border-radius: 50px;
+
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.estado-punto {
+  width: 9px;
+  height: 9px;
+  background: #16a34a;
+  border-radius: 50%;
+}
+
+/* INFORMACIÓN ACADÉMICA */
+
+.grado {
+  margin: 25px 0;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* VALIDACIÓN */
+
+.vigencia {
+  width: 100%;
+  background: var(--verde);
+  color: white;
+
+  border-radius: 10px;
+  padding: 16px 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.icono {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 35px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+  body {
+    padding: 30px 18px;
+  }
+
+  .header h1 {
+    font-size: 19px;
+  }
+
+  .foto-contenedor {
+    width: 135px;
+    height: 135px;
+  }
+
+  .perfil h2 {
+    font-size: 21px;
+  }
+
+  .informacion {
+    padding: 24px 18px;
+  }
+
+  .grado {
+    font-size: 16px;
+  }
+
+  .vigencia {
+    font-size: 13px;
+  }
+}
